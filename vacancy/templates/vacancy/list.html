@@ -10,7 +10,13 @@
     <div><a href="/"><- Main page</a></div>
     <h2>Vacancies</h2>
     {% for vacancy in vacancies %}
-       <div>{{ vacancy.author }}: {{ vacancy.description }}</div>
+        <ul>
+        <li><u>{{ vacancy.title }}</u></li>
+            Author:{{ vacancy.author }}
+            <br>
+            {{ vacancy.description }}
+        <br>
+        </ul>
     {% endfor %}
   </body>
 

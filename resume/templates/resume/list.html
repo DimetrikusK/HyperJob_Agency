@@ -10,7 +10,14 @@
     <div><a href="/"><- Main page</a></div>
     <h2>Resumes</h2>
     {% for resume in resumes %}
-       <div>{{ resume.author }}: {{ resume.description }}</div>
+        <ul>
+        <li><u>{{ resume.title }}</u></li>
+            Author:{{ resume.author }}
+            <br>
+            {{ resume.description }}
+        <br>
+        </ul>
+
     {% endfor %}
   </body>
 
